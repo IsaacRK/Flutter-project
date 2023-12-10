@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:vanilla/editAcc_screen.dart';
-import 'package:vanilla/home_screen.dart';
-import 'package:vanilla/myAcc_screen.dart';
-import 'package:vanilla/registration_screen.dart';
 import 'package:vanilla/spash_screen.dart';
 
 void main() {
@@ -23,7 +19,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
           fontFamily: 'Poppins'),
-      home: const HomeScreen(),
+      home: const SplashScreen(),
     );
   }
 }
