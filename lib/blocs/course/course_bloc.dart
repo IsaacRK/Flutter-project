@@ -1,4 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:vanilla/model/course/course_excercise_response.dart';
 import 'package:vanilla/model/course/course_response.dart';
 import 'package:meta/meta.dart';
 import 'package:vanilla/repository/course/course_repository.dart';
@@ -16,11 +17,6 @@ class CourseBloc extends Bloc<CourseEvent, CourseState> {
         final data = await courseRepository.getCourseList(event.majorName);
 
         emit(CourseSuccess(courseList: data));
-      } else if (event is GetCourseExcerciseEvent) {
-        emit(CourseExcerciseLoading());
-
-        final data =
-            await courseRepository.getCourseExcerciseList(event.courseId);
       }
     });
   }

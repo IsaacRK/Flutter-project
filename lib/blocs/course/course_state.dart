@@ -18,17 +18,3 @@ final class CourseFailed extends CourseState {
 
   CourseFailed({required this.errorMessage});
 }
-
-final class CourseExcerciseLoading extends CourseState {}
-
-final class CourseExcerciseSuccess extends CourseState {
-  final List<CourseData> courseList;
-
-  CourseExcerciseSuccess({required this.courseList});
-}
-
-final class CourseExcerciseFailed extends CourseState {
-  final String errorMessage;
-
-  CourseExcerciseFailed({required this.errorMessage});
-}

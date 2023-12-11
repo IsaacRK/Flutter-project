@@ -4,7 +4,6 @@ import 'package:vanilla/all_course_list_screen.dart';
 import 'package:vanilla/blocs/banner/banner_bloc.dart';
 import 'package:vanilla/blocs/course/course_bloc.dart';
 import 'package:vanilla/repository/banner/banner_repository.dart';
-import 'package:vanilla/repository/course/course_repository.dart';
 import 'package:vanilla/widgets/course_card.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -14,10 +13,6 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider<CourseBloc>(
-          create: (context) => CourseBloc(courseRepository: CourseRepository())
-            ..add(GetCourseListEvent(majorName: 'IPA')),
-        ),
         BlocProvider<BannerBloc>(
           create: (context) => BannerBloc(bannerRepository: BannerRepository())
             ..add(GetBannerListEvent()),
