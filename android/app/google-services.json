@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "463054530843",
+    "project_id": "vanilla-edspert20",
+    "storage_bucket": "vanilla-edspert20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463054530843:android:9104b17786e88b69540bbe",
+        "android_client_info": {
+          "package_name": "id.edspert20.tutorFlutterApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463054530843-u34cf4lh6dfbsjer1dfd7d89uilh4d5b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyqFGUrzWAEmShh2JMh-JHuHur0zCvjZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463054530843-u34cf4lh6dfbsjer1dfd7d89uilh4d5b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
